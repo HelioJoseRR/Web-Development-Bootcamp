@@ -1,0 +1,20 @@
+# Ignorar todos os arquivos de imagem
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+*.svg
+*.webp
+*.tiff
+*.ico
+
+# Formatos de imagem RAW de câmeras
+*.raw
+*.cr2
+*.nef
+*.orf
+*.sr2
+
+# Ignorar todos os arquivos chamados solution.html
+solution.html

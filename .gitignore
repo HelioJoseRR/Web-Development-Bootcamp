@@ -1,3 +1,6 @@
 # Ignorar todos os arquivos chamados solution.html
 solution.html
 solution*.html
+
+goal.png
+goal*.png

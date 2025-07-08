@@ -1,0 +1,211 @@
+:root {
+  --cor-fundo-principal: #fff2e0;
+  --cor-fundo-info: #c0c9ee;
+  --cor-fundo-circulo: #a2aadb;
+  --cor-primaria-azul: #093fb4;
+  --cor-texto-preto: #000000;
+  --cor-texto-branco: #fffcfb;
+  --cor-botao: #d8813e;
+  --cor-botao-hover: #b49209;
+  --branco: white;
+  --preto: black;
+}
+
+body {
+  background-color: var(--cor-fundo-principal);
+}
+
+.title {
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.title-h2 {
+  font-family: "Indie Flower", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.title-h1 {
+  font-family: "Alfa Slab One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.info {
+  background-color: var(--cor-fundo-info);
+  border-radius: 15px;
+  padding: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 991px) {
+  .info {
+    width: 400px;
+  }
+}
+
+.img-container {
+  width: 400px;
+  border-radius: 15px;
+  border: 3px solid var(--cor-fundo-info);
+  position: relative;
+  overflow: hidden;
+}
+
+.img-background-circle {
+  width: 500px;
+  height: 500px;
+  background-color: var(--cor-fundo-circulo);
+  border-radius: 50%;
+  position: absolute;
+  left: -30%;
+  bottom: -20%;
+  z-index: 1;
+}
+
+.img-me {
+  max-width: 100%;
+  height: auto;
+  background-color: transparent;
+  position: relative;
+  z-index: 2;
+  border: 0px;
+  left: -20px;
+  bottom: -5px;
+}
+
+.title-about-me {
+  align-items: center;
+}
+
+.title-about-me > h2 {
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  color: var(--cor-primaria-azul);
+  font-size: 52px;
+}
+
+.text-about-me {
+  align-items: center;
+}
+
+.text-about-me > * {
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: light;
+  font-style: normal;
+  color: var(--cor-texto-preto);
+  font-size: 24px;
+}
+
+@media (max-width: 991px) {
+  .text-about-me > * {
+    font-size: 18px;
+  }
+
+  .title-about-me > h2 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .text-about-me > * {
+    font-size: 18px;
+  }
+}
+.btn-about-me a {
+  text-decoration: none;
+}
+
+.btn-about-me > * {
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: light;
+  font-style: normal;
+  color: var(--cor-texto-branco);
+}
+
+.btn-item {
+  background-color: var(--cor-botao);
+}
+
+.btn-item:hover {
+  background-color: var(--cor-botao-hover);
+}
+
+img.svg-white {
+  filter: brightness(0) invert(1);
+}
+
+img.svg-blue{
+  height: 30px;
+  width: auto;
+  /* Este filtro gera a cor equivalente a var(--cor-primaria-azul) */
+  filter: invert(19%) sepia(80%) saturate(5545%) hue-rotate(220deg) brightness(91%) contrast(92%);
+}
+
+.project {
+  margin-top: 75px;
+  margin-bottom: 50px;
+}
+
+.project-h2 {
+  font-family: "Alfa Slab One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.project-card {
+  background-color: var(--cor-primaria-azul);
+}
+
+.btn-project {
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: light;
+  font-style: normal;
+  background-color: var(--branco);
+  color: var(--cor-primaria-azul);
+  width: 100%;
+}
+
+.btn-project:hover {
+  background-color: var(--preto);
+  color: var(--branco);
+}
+
+.card{
+    height: 350px;
+    width: auto;
+    border-radius: 15px;
+    margin: 15px;
+}
+
+.card-title-wrapper {
+  background-color: var(--branco);
+  text-align: center;
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: light;
+  font-style: normal;
+}
+
+.card-title {
+  font-size: 24px;
+  height: 100%;
+  width: 100%;
+}
+
+.card-text {
+  text-align: start;
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: light;
+  font-style: normal;
+  color: var(--branco);
+}
